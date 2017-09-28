@@ -8,62 +8,118 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- We need to bring in the bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Sail" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 </head>
 
 <body>
 
 
-    <header>
+    <!-- <header> -->
 
-    </header>
+    <!-- </header> -->
 
-    <div class="container">
+    <!-- <div class="container">
 
         <div class="name">
             <div class="title"> Michelle
             </div>
-        </div>
-            <div class="nav">
-                <ul>
+        </div> -->
+
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- THIS does the hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Michelle</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-9 main">
+                <img src="http://placekitten.com/g/250/300" class="img-responsive" alt="cat" width="250" height="300"> 
+
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <h4 class="media-heading">About Me</h4>
+                        <hr>
+                        <p>I'm co-founder, creative director and wearer of many hats at Bam Lab, LLC. I've been self employed
+                            for 10+ years in the creative field. Formally trained as a graphic designer; the lion's share
+                            of my work experience has been an all encompassing process of product creation and development.
+                        </p>
+
+                        <p>I can take an idea all the way to product launch -- including r&amp;d, marketing, merchandising,
+                            and all layers of design in between. Ecommerce is my jam.
+                        </p>
+                        <p>Beyond industry, you'll likely find me improv gardening, tooling around on diy projects or hiking
+                            thru the many awesome trails in New England.
+                        </p>
+                    </div>
+                </div>
 
 
-            <div class="main">
-                <h1>About Me</h1>
-                <hr>
-                <img src="http://placekitten.com/g/250/300" alt="cat">
-                <p>I'm co-founder, creative director and wearer of many hats at Bam Lab, LLC. I've been self employed for 10+
-                    years in the creative field. Formally trained as a graphic designer; the lion's share of my work experience
-                    has been an all encompassing process of product creation and development.
-                </p>
-
-                <p>I can take an idea all the way to product launch -- including r&amp;d, marketing, merchandising, and all
-                    layers of design in between. Ecommerce is my jam.
-                </p>
-                <p>Beyond industry, you'll likely find me improv gardening, tooling around on diy projects or hiking thru the
-                    many awesome trails in New England.
-                </p>
             </div>
 
-            <div class="sidebar">
-                <h1>Connect With Me</h1>
-                <hr>
-                <a href="https://github.com/michellechristina" target="blank"><img src="assets/images/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/michelle-baumann-2023b4148/" target="blank"><img src="assets/images/linkedin.png" alt="linkedin"></a>
-                <a href="https://stackexchange.com/users/11585903/michelle" target="blank"><img src="assets/images/stackoverflow.png" alt="stackoverflow"></a>
+            <div class="col-md-3">
+                <div class="sidebar">
+                        <h4 class="media-heading">Connect With Me</h4>
+                    <hr>
+                    <a href="https://github.com/michellechristina" target="blank"><img src="assets/images/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/michelle-baumann-2023b4148/" target="blank"><img src="assets/images/linkedin.png" alt="linkedin"></a>
+                    <a href="https://stackexchange.com/users/11585903/michelle" target="blank"><img src="assets/images/stackoverflow.png" alt="stackoverflow"></a>
+                </div>
             </div>
-
         </div>
+    </div>
 
-        <div class="footer">
-            <p> &copy; Copyright 2017 Michelle Baumann</p>
-        </div>
+    </div>
 
+    <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+              <p class="navbar-text pull-left">&copy; 2017 -  Michelle Baumann
+    
+              </p>
+              
+            </div>
 
 
 
